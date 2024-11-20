@@ -1,4 +1,3 @@
-#devggn
 
 import asyncio
 from pyrogram import filters
