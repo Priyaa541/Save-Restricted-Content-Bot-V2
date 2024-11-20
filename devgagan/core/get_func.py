@@ -1,4 +1,3 @@
-#devgaganin
 
 import asyncio
 import time
