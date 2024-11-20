@@ -1,4 +1,3 @@
-#devgaganin
 
 
 import math
@@ -36,13 +35,13 @@ async def subscribe(app, message):
       try:
          user = await app.get_chat_member(update_channel, message.from_user.id)
          if user.status == "kicked":
-            await message.reply_text("You are Banned. Contact -- @xadarsh_x")
+            await message.reply_text("You are Banned. Contact -- @Contact_xbot")
             return 1
       except UserNotParticipant:
          await message.reply_photo(photo="https://tecolotito.elsiglocoahuila.mx/i/2023/12/2131463.jpeg",caption=script.FORCE_MSG.format(message.from_user.mention), reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"{url}")]]))
          return 1
       except Exception:
-         await message.reply_text("Something Went Wrong. Contact us @xadarsh_x...")
+         await message.reply_text("Something Went Wrong. Contact us @Contact_xbot...")
          return 1
 
 
